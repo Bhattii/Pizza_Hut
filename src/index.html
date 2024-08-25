@@ -9,14 +9,15 @@
  
      <link href="./output.css" rel="stylesheet">
       <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
- 
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 <body class="flex">
 
- <menu class="w-20">
-    <ul class="text-center border">
+ <menu class="w-20 relative">
+    <ul class="text-center border fixed">
         <li class="mb-10 mt-5"><i class="fa-solid fa-bars bg-black text-white p-4 rounded-full"></i></li>
-        <li class="my-10"> <i class="fa-solid fa-house-chimney  bg-orange-400 text-white p-3 rounded-full"></i>
+       <a href=""><li class="my-10"> <i class="fa-solid fa-house-chimney  bg-orange-400 text-white p-3 rounded-full"></i></a> 
         <p class="opacity-80">Order</p>
         </li>
         <li class="my-10"><i class="fa-regular fa-2x fa-clipboard "></i>
@@ -40,19 +41,33 @@
     </ul> 
  </menu>
 
- <div class="w-full">
-<header class="flex justify-between mx-4">
-<img src="../assets/Icons/broadwayPizzaLogo.png" alt="">
-<div class="flex  items-center">
-    <i class="fa-solid fa-location-arrow "></i>
-    <p class="mx-2">Select</p>
-    <p class="px-3 py-1 bg-orange-400 rounded"> Delivery/Pickup </p>
+ <div class="">
+
+    <header class="sticky top-0 left-0 right-0  py-2 shadow-md" style="background-color: white;">
+     <div class="flex justify-between mx-2">
+     <img src="../assets/Icons/broadwayPizzaLogo.png" alt="" width="10%">
+     <div class="flex items-center">
+     <i class="fa-solid fa-location-arrow "></i>
+     <p class="mx-2 ">Select</p>
+     <p class="px-3 bg-orange-400 rounded font-bold text-balance"> Delivery/Pickup </p>
 </div>
+    </div>
     </header>
+
+
+<div class="w3-content w3-section w-full">
+  <img class="mySlides object-none w3-animate-top w-full" src="../assets/Banner/1egza123123website-banner.jpg">
+  <img class="mySlides object-none w3-animate-bottom w-full" src="../assets/Banner/jummamubarak.jpg">
+  <img class="mySlides object-none w3-animate-top w-full" src="../assets/Banner/newresizeimagevaluiuedeal.jpg">
+  <img class="mySlides object-none w3-animate-bottom w-full" src="../assets//Banner/qwqeqwe12web-banner (1)_11zon.jpg">
+</div>      
+    
 
  </div>
 
     </div>
     
+
+<script src="../script.js"></script>
 </body>
 </html> 
