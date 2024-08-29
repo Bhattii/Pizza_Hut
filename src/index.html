@@ -12,16 +12,19 @@
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
-<body class="flex">
+<body>
 
-    <menu class="w-1/12">
+
+    <div class="flex relative">
+
+        <menu class="w-1/12">
         <ul class="text-center border fixed">
             <li class="mb-10 mt-5"><i class="fa-solid fa-bars bg-black text-white p-4 rounded-full"></i></li>
-        <a href=""><li class="my-10"> <i class="fa-solid fa-house-chimney  bg-orange-400 text-white p-3 rounded-full"></i></a> 
-            <p class="opacity-80">Order</p>
+             <a href=""><li class="my-10"> <i class="fa-solid fa-house-chimney  bg-orange-400 text-white p-3 rounded-full"></i></a> 
+             <p class="opacity-80">Order</p>
             </li>
             <li class="my-10"><i class="fa-regular fa-2x fa-clipboard "></i>
-            <p class="opacity-80">Menu</p>
+             <p class="opacity-80">Menu</p>
             </li>
             <li class="my-10">
                 <div class="relative">
@@ -39,11 +42,28 @@
                 <p class="opacity-80">Profile</p>
             </li>
         </ul> 
-    </menu>
+        </menu>
 
-    <div class="">
+        <aside class="absolute left-0 top-0 z-30 bg-slate-400">
+            <h2 class="text-center font-bold">Menu</h2>
+            <ul>
+                <li><a href="">
+                    <img src="../assets/asideIcons/about.svg" alt="">
+                    <p>About</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </aside>
 
-    <header class="fixed top-0 left-[65px] right-0 p-1 shadow-md bg-white z-50 opacity-90">
+        <main class="">
+
+    <header class="fixed top-0 left-[65px] right-0 p-1 shadow-md bg-white z-20 opacity-90">
      <div class="flex justify-between mx-2">
      <img src="../assets/Icons/broadwayPizzaLogo.png" alt="" width="10%">
      <div class="flex items-center">
@@ -1150,8 +1170,10 @@
         <p class="opacity-50">Copyright © Broadway Pizza Pakistan [J &amp; S CORPORATION]. All rights reserved. Created and managed with care by <a href=""  target="_blank" class="font-bold text-indigo-900">Megnus</a></p>
        </div>
 
+        </main>
+ 
     </div>
-
+    
 
 <script src="./script.js"></script>
 </body>
