@@ -49,4 +49,11 @@ function carousel() {
             });
 
             window.addEventListener('scroll', changeActiveLink);
-        });
+  });
+        
+
+
+// aside 
+document.getElementsByTagName("aside").addEventListener('click', () => {
+  this.classList.display = "hidden";
+  })

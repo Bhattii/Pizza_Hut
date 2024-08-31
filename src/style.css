@@ -1,0 +1,10 @@
+input:checked~.dot {
+    transform: translateX(1.75rem);
+    /* Moves the dot to the right */
+    background-color: orange;
+}
+
+input:checked~.block {
+    background-color: rgba(250, 164, 6, 0.692);
+    /* Changes the background color for the "on" state */
+}
