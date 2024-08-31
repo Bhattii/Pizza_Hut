@@ -54,6 +54,4 @@ function carousel() {
 
 
 // aside 
-document.getElementsByTagName("aside").addEventListener('click', () => {
-  this.classList.display = "hidden";
-  })
+document.getElementsByTagName(aside).classList.add("hidden")
