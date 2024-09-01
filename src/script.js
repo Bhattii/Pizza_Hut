@@ -56,7 +56,9 @@ function carousel() {
 // aside
 document.addEventListener('DOMContentLoaded', () => {
     const barIcon = document.querySelector('.fa-bars');
-    const asideSection = document.querySelector('aside');
+  const asideSection = document.querySelector('aside');
+  const close = document.querySelector('close');
+  
     const body = document.querySelector('body');
 
     // Function to show or hide the aside section
@@ -77,8 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Hide the aside when clicking on the aside itself
-    asideSection.addEventListener('click', () => {
+    // Hide the aside when clicking on the close icon
+    close.addEventListener('click', () => {
         asideSection.classList.add('-translate-x-full');
     });
 });
