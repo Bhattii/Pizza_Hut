@@ -53,5 +53,32 @@ function carousel() {
         
 
 
-// aside 
-document.getElementsByTagName(aside).classList.add("hidden")
+// aside
+document.addEventListener('DOMContentLoaded', () => {
+    const barIcon = document.querySelector('.fa-bars');
+    const asideSection = document.querySelector('aside');
+    const body = document.querySelector('body');
+
+    // Function to show or hide the aside section
+    const toggleAside = () => {
+        asideSection.classList.toggle('-translate-x-full');
+    };
+
+    // Show the aside when clicking the bar icon
+    barIcon.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent event from triggering body click event
+        toggleAside();
+    });
+
+    // Hide the aside when clicking on the body
+    body.addEventListener('click', (e) => {
+        if (!asideSection.contains(e.target) && !barIcon.contains(e.target)) {
+            asideSection.classList.add('-translate-x-full');
+        }
+    });
+
+    // Hide the aside when clicking on the aside itself
+    asideSection.addEventListener('click', () => {
+        asideSection.classList.add('-translate-x-full');
+    });
+});
