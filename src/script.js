@@ -80,7 +80,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Hide the aside when clicking on the close icon
-    close.addEventListener('click', () => {
-        asideSection.classList.add('-translate-x-full');
-    });
+    // close.addEventListener('click', () => {
+    //     asideSection.classList.add('-translate-x-full');
+    // });
 });
+
+
+
+let cartCountElement = document.getElementById('cart-count');
+let cartCount = 0;
+
+// Get All Products plus icons
+let productIcons = document.querySelectorAll('.fa-plus');
+
+
+// Dynamically assign data-id
+productIcons.forEach((icon, index) => {
+    icon.setAttribute('data-id', index + 1) // Assigns 1, 2, 3, etc., as data-id
+});
+
+// click event logic for adding to the cart
+productIcons.forEach(icon => {
+    icon.addEventListener('click', function(event) {
+        event.preventDefault();
+        let productId = this.getAttribute('data-id');
+        console.log("product add to the card", productId);
+        cartCount++;  // Increment the cart count
+        cartCountElement.textContent = cartCount;  // Update the cart count in the DOM
+    })
+})
