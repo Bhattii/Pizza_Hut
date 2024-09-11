@@ -327,7 +327,7 @@
 				</header>
 
 				<section
-					class="relative top-20 left-20 mx-20 flex flex-col justify-center items-center">
+					class="relative top-20 left-20 mx-10 flex flex-col justify-center items-center">
 					<h1 class="text-center">Delivery Information</h1>
 					<form
 						action=""
@@ -427,36 +427,27 @@
 										required />
 								</label>
 							</div>
-						</div>
-						<div class="flex gap-10">
-							<label
-								for="home-office"
-								class="flex flex-col gap-5">
+							<label class="flex flex-col gap-5">
 								Select a label for effective delivery
-								<div class="flex gap-5 justify-center items-center">
-									<select
-										name=""
-										id="home-office"
-										class="border h-10 bg-orange-500">
-										<option
-											value="Office"
-											class="border p-5 shadow-xl">
-											OFFICE
-										</option>
-										<option
-											value="Home"
-											class="border p-5 shadow-xl">
-											HOME
-										</option>
-									</select>
+								<div class="flex gap-5">
+									<div class="border p-5 shadow-xl hover:border-orange-500">
+										<i class="fa-solid fa-briefcase"></i>
+										<span>OFFICE</span>
+									</div>
+
+									<div class="border p-5 shadow-xl hover:border-orange-500">
+										<i class="fa-solid fa-house"></i>
+										<span>HOME</span>
+									</div>
 								</div>
 							</label>
-							<button
-								type="submit"
-								class="bg-orange-500 px-5 py-3 hover:bg-blue-800 shadow-lg shadow-red-600">
-								Save
-							</button>
 						</div>
+
+						<button
+							type="submit"
+							class="bg-orange-500 px-10 py-5 rounded-lg hover:bg-blue-800 shadow-lg shadow-red-600">
+							Save
+						</button>
 					</form>
 				</section>
 			</main>

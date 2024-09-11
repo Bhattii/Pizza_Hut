@@ -92,26 +92,33 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
-let cartCountElement = document.getElementById('crt-count');
-let cartCount = 0;
+// Addt to Cart
 
-// Get All Products plus icons
-let productIcons = document.querySelectorAll('.fa-plus');
+document.addEventListener('DOMContentLoaded', () => {
+	let cartCountElement = document.getElementById('crt-count');
+	let cartCount = 0;
 
-// Dynamically assign data-id
-productIcons.forEach((icon, index) => {
-	icon.setAttribute('data-id', index + 1); // Assigns 1, 2, 3, etc., as data-id
-});
+	// Get All Products plus icons
+	let productIcons = document.querySelectorAll('.fa-plus');
 
-// click event logic for adding to the cart
-productIcons.forEach((icon) => {
-	icon.addEventListener('click', function (event) {
-		event.preventDefault();
-		let productId = this.getAttribute('data-id');
-		console.log('product add to the card', productId);
-		cartCount++; // Increment the cart count
-		cartCountElement.textContent = cartCount; // Update the cart count in the DOM
+	// Dynamically assign data-id
+	productIcons.forEach((icon, index) => {
+		icon.setAttribute('data-id', index + 1); // Assigns 1, 2, 3, etc., as data-id
+	});
+
+	// click event logic for adding to the cart
+	productIcons.forEach((icon) => {
+		icon.addEventListener('click', function (event) {
+			event.preventDefault();
+			let productId = this.getAttribute('data-id');
+			console.log('product added to the cart', productId);
+			cartCount++; // Increment the cart count
+			if (cartCountElement) {
+				// Ensure the element exists before updating
+				cartCountElement.textContent = cartCount; // Update the cart count in the DOM
+			} else {
+				console.error('Cart count element not found');
+			}
+		});
 	});
 });
-
-//Deleivery
