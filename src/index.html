@@ -31,18 +31,18 @@
 	<body>
 		<aside
 			class="fixed left-0 top-0 w-80 bg-white z-30 overflow-y-scroll h-full transform -translate-x-full transition-transform duration-300">
-			\
 			<h2
 				class="font-bold fixed top-0 left-0 right-0 w-80 text-center opacity-90 bg-white"
 				style="margin-top: 0">
 				Menu
 			</h2>
-			<div
+			<button
 				id="close"
-				class="fixed top-0 right-0 left-0 z-50"></div>
-			<i
-				class="fa-solid fa-circle-xmark text-xl z-50"
-				style="color: #ffc800"></i>
+				class="fixed top-1 right-1 z-50">
+				<i
+					class="fa-solid fa-circle-xmark text-xl z-50"
+					style="color: #ffc800"></i>
+			</button>
 
 			<ul class="mb-10 pt-20">
 				<li class="border-b border-gray-300">
@@ -264,8 +264,10 @@
 							class="fa-solid fa-bars cursor-pointer bg-black text-white p-4 rounded-full"></i>
 					</li>
 
-					<li class="my-10">
-						<a href="">
+					<li
+						class="my-10"
+						id="order">
+						<a href="../pages/Delivery.html">
 							<i
 								class="fa-solid fa-house-chimney bg-orange-400 text-white p-3 rounded-full">
 							</i>
@@ -277,6 +279,7 @@
 						<i class="fa-regular fa-2x fa-clipboard"></i>
 						<p class="opacity-80">Menu</p>
 					</li>
+
 					<li class="my-10">
 						<div class="relative">
 							<i class="fa-solid fa-cart-plus fa-lg"></i>
@@ -291,10 +294,12 @@
 						</div>
 						<p class="opacity-80">Cart</p>
 					</li>
+
 					<li class="my-10">
 						<i class="fa-solid fa-thumbtack fa-lg"></i>
 						<p class="opacity-80">Location</p>
 					</li>
+
 					<li class="mt-10 mb-20">
 						<i class="fa-regular fa-user fa-lg"></i>
 						<p class="opacity-80">Profile</p>
@@ -302,7 +307,7 @@
 				</ul>
 			</menu>
 
-			<main class="">
+			<main class="relative">
 				<header
 					class="fixed top-0 left-[65px] right-0 p-1 shadow-md bg-white z-10 opacity-90">
 					<div class="flex justify-between mx-2">
@@ -313,14 +318,16 @@
 						<div class="flex items-center">
 							<i class="fa-solid fa-location-arrow"></i>
 							<p class="mx-2">Select</p>
-							<p class="px-3 bg-orange-400 rounded font-bold text-balance">
-								Delivery/Pickup
-							</p>
+							<a href="../pages/Delivery.html">
+								<p class="px-3 bg-orange-400 rounded font-bold text-balance">
+									Delivery/Pickup
+								</p>
+							</a>
 						</div>
 					</div>
 				</header>
 
-				<div class="w3-section pt-20 mr-1">
+				<section class="w3-section pt-20 mr-1">
 					<img
 						class="mySlides w3-animate-top w-full"
 						src="../assets/Banner/1egza123123website-banner.jpg" />
@@ -333,7 +340,7 @@
 					<img
 						class="mySlides w3-animate-bottom w-full"
 						src="../assets//Banner/qwqeqwe12web-banner (1)_11zon.jpg" />
-				</div>
+				</section>
 
 				<nav
 					class="pt-2 pb-5 w-full text-center bg-white sticky top-[62px] z-10">
@@ -1808,7 +1815,7 @@
 					</div>
 				</section>
 
-				<div class="flex m-32 justify-center items-center gap-16">
+				<footer class="flex m-32 justify-center items-center gap-16">
 					<div class="flex">
 						<img
 							src="../assets/GetApp/get_the_app.png"
@@ -1843,7 +1850,7 @@
 							>Megnus</a
 						>
 					</p>
-				</div>
+				</footer>
 			</main>
 		</div>
 
