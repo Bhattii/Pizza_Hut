@@ -267,7 +267,7 @@
 					</li>
 
 					<li class="my-10">
-						<a href="../pages/Order.html">
+						<a href="">
 							<i
 								class="fa-solid fa-house-chimney bg-orange-400 text-white p-3 rounded-full">
 							</i>
@@ -328,127 +328,86 @@
 
 				<section
 					class="relative top-20 left-20 mx-10 flex flex-col justify-center items-center">
-					<h1 class="text-center">Delivery Information</h1>
-					<form
-						action=""
-						class="flex flex-col justify-center items-center gap-10">
-						<div class="flex gap-10 justify-center">
-							<div class="flex flex-col gap-5">
-								<label for="name"
-									>Full Name
-									<input
-										type="text"
-										id="name"
-										placeholder="Enter Your Full Name"
-										class="border w-full p-2"
-										required
-								/></label>
+					<img
+						src="../assets/Order/Pizza-min-2.65b11807d421b6.76204101.png"
+						alt="" />
 
-								<label for="phone"
-									>Phone Number
+					<h1 class="font-semibold">Pizza Order Form</h1>
+					<div>
+						<div class="hover:bg-gray-200 p-10">
+							<div class="flex justify-between gap-32">
+								<div class="flex justify-between items-center gap-5">
 									<input
-										type="text"
-										id="phone"
-										placeholder="Enter Your Phone Number"
-										class="border w-full p-2"
-										required
-								/></label>
+										type="checkbox"
+										name="order"
+										id="1"
+										class="size-5 rounded-xl outline-blue-300 hover:outline-double" />
+									<div class="relative flex justify-center items-center">
+										<img
+											src="../assets/Order/pizza-assortment-set_1284-20110.jpg"
+											alt=""
+											class="w-20 h-20 rounded-full" />
 
-								<label for="build"
-									>Building / House No / Floor / Street
-									<input
-										type="text"
-										id="build"
-										placeholder="Please Enter"
-										class="border w-full p-2"
-										required
-								/></label>
-
-								<label for="colony"
-									>Colony / Suburb / Locality / Landmark
-									<input
-										type="text"
-										id="colony"
-										placeholder="Please Enter"
-										class="border w-full p-2"
-										required
-								/></label>
-							</div>
-
-							<div class="flex flex-col gap-5">
-								<label for="province"
-									>Province
-									<select
-										class="border w-full p-2"
-										name="province"
-										id="province"
-										required>
-										<option value="">Select Province</option>
-										<option value="Punjab">Punjab</option>
-										<option value="KPK">KPK</option>
-										<option value="Sindh">Sindh</option>
-										<option value="Azad Kashmir">Azad Kashmir</option>
-										<option value="Balochistan">Balochistan</option>
-										<option value="Federal Administered Tribal Areas">
-											Federal Administered Tribal Areas
-										</option>
-										<option value="Gilgit-Baltistan">Gilgit-Baltistan</option>
-										<option value="Islamabad">Islamabad</option>
-									</select>
-								</label>
-
-								<label for="city"
-									>City
-									<select
-										class="border w-full p-2"
-										name="city"
-										id="city"
-										required>
-										<option value="">Select City</option>
-									</select>
-								</label>
-
-								<label for="address"
-									>Address
-									<input
-										class="w-full border p-2"
-										type="text"
-										id="address"
-										placeholder="Please Enter correct address"
-										required />
-								</label>
-								<label for="addtion"
-									>Additional Information
-									<input
-										class="w-full border p-2"
-										type="text"
-										id="addtion"
-										placeholder="Optional Additional Information"
-										required />
-								</label>
-							</div>
-							<label class="flex flex-col gap-5">
-								Select a label for effective delivery
-								<div class="flex gap-5">
-									<div class="border p-5 shadow-xl hover:border-orange-500">
-										<i class="fa-solid fa-briefcase"></i>
-										<span>OFFICE</span>
+										<div
+											class="absolute invisible hover:visible bg-opacity-60 bg-blue-700 w-full h-full rounded-full flex justify-center items-center">
+											<i
+												class="fa-solid fa-magnifying-glass-plus fa-beat fa-xl"
+												style="color: #ffffff"></i>
+										</div>
 									</div>
-
-									<div class="border p-5 shadow-xl hover:border-orange-500">
-										<i class="fa-solid fa-house"></i>
-										<span>HOME</span>
+									<div>
+										<h2>Pizza Name</h2>
+										<p>Lorem ipsum dolor sit amet consectetur</p>
+										<form action="">
+											<label for="quantity"
+												>Quantity
+												<select
+													name="quantity"
+													id="quantity"
+													class="border p-2">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</label>
+											<label for="size"
+												>Size
+												<select
+													name="size"
+													id="size"
+													class="p-2">
+													<option value="small">Small</option>
+													<option value="medium">Medium</option>
+													<option value="large">Large</option>
+												</select>
+											</label>
+										</form>
 									</div>
 								</div>
-							</label>
+								<div class="font-semibold">15.00$</div>
+							</div>
+							<div class="text-gray-500 text-right">Item Subtotal: 15:00$</div>
 						</div>
-
-						<button
-							type="submit"
-							class="bg-orange-500 px-20 py-5 rounded-lg hover:text-white hover:bg-blue-800 shadow-lg shadow-red-600">
-							Save
-						</button>
-					</form>
+						<div
+							class="border border-transparent m-5"
+							style="
+								border-image: repeating-linear-gradient(
+										90deg,
+										rgb(211, 149, 57) 0,
+										rgb(243, 159, 3) 5px,
+										transparent 1px,
+										transparent 10px
+									)
+									1;
+							"></div>
+					</div>
 				</section>
 
 				<footer class="flex m-32 justify-center items-center gap-16">
@@ -491,6 +450,6 @@
 		</div>
 
 		<script src="../src/script.js"></script>
-		<script src="delivery.js"></script>
+		<script src="Order.js"></script>
 	</body>
 </html>

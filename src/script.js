@@ -28,12 +28,19 @@ document.addEventListener('DOMContentLoaded', function () {
 	function changeActiveLink() {
 		let index = sections.length;
 
+		// Decrease index until you find the section the user has scrolled past
 		while (--index && window.scrollY + 150 < sections[index].offsetTop) {}
 
-		navLinks.forEach((link) =>
-			link.classList.remove('bg-orange-600', 'text-white')
-		);
-		navLinks[index].classList.add('bg-orange-600', 'text-white');
+		// Ensure index is within the valid range
+		if (index >= 0 && index < navLinks.length) {
+			// Remove active styles from all links
+			navLinks.forEach((link) =>
+				link.classList.remove('bg-orange-600', 'text-white')
+			);
+
+			// Add active styles to the current link
+			navLinks[index].classList.add('bg-orange-600', 'text-white');
+		}
 	}
 
 	function handleLinkClick(event) {
@@ -110,8 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	productIcons.forEach((icon) => {
 		icon.addEventListener('click', function (event) {
 			event.preventDefault();
-			let productId = this.getAttribute('data-id');
-			console.log('product added to the cart', productId);
+			// let productId = this.getAttribute('data-id');
+			// console.log('product added to the cart', productId);
 			cartCount++; // Increment the cart count
 			if (cartCountElement) {
 				// Ensure the element exists before updating
