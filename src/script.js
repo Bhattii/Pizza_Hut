@@ -129,3 +129,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 });
+
+// Fetch the header content and insert it into the page
+document.addEventListener('DOMContentLoad', function () {
+	const headerPlaceholder = document.getElementById('header-placeholder');
+	fetch('header.html')
+		.then((response) => response.text())
+		.then((data) => {
+			headerPlaceholder.innerHTML = data;
+		})
+		.catch((error) => console.log('Error loading the header:', error));
+});
